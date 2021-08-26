@@ -1,0 +1,234 @@
+@font-face{
+    font-family: "RobotoCondensedLight";
+    src: url("../fonts/robotocondensed-light.ttf"), 
+    url("../fonts/robotocondensed-light.eot"), 
+    url("../fonts/robotocondensed-light.woff"), 
+    url("../fonts/robotocondensed-light.woff2"), 
+    url("../fonts/robotocondensed-light.svg");
+}
+@font-face{
+    font-family: "RobotoRegular";
+    src: url("../fonts/roboto-regular.ttf"), 
+    url("../fonts/roboto-regular.eot"), 
+    url("../fonts/roboto-regular.woff"), 
+    url("../fonts/roboto-regular.woff2"), 
+    url("../fonts/roboto-regular.svg");
+}
+@font-face{
+    font-family: "OswaldLight";
+    src: url("../fonts/oswald-light.ttf"), 
+    url("../fonts/oswald-light.eot"), 
+    url("../fonts/oswald-light.woff"), 
+    url("../fonts/oswald-light.woff2"), 
+    url("../fonts/oswald-light.svg");
+}
+
+:root {
+    --fondo_oscuro: #3c5378;
+    --fondo_claro: #e6e6e6;
+    --letra_claro: #b8b4b4;
+    --fondo_oscuro: #333333;
+    --transi:#0070b8;
+
+  }
+
+  *{
+    font-family: "OswaldLight";
+    margin: 0px;
+    padding: 0px;
+  }
+  
+
+  body{
+      
+      background-image: url("../assets/img/239674.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+  }
+  
+
+#titulo{    
+    background-color: #333;
+    color:var(--letra_claro); 
+}
+#titulo h4{    
+    text-align: center;
+}
+
+#imagen{
+    width: 40%;
+	height: auto;
+    margin-left: 25%;
+}
+
+#imagen p{    
+    margin-left: 25%;
+    margin-top: 10%;
+    color:var(--letra_claro); 
+}
+#menu{
+    text-align: center;
+    list-style: none;    
+    width: 100%;
+    height: 60%;        
+}
+
+#menu_container{
+    padding-top: 50%;    
+}
+
+.boton{
+    height: 30px;
+    border-top: 2px solid var(--letra_claro);    
+}
+
+.boton:hover {
+    background-color:var(--transi);
+    color: white;
+}
+
+.boton a{
+    text-decoration:none;
+    color: var(--letra_claro);
+}
+#menu img {
+    width: 20px;
+	height: auto;
+}
+.img-responsive{
+	margin-top: 10px;
+    width: 100%;
+	height: auto;
+}
+
+#nav {
+    padding: 1em;
+    background: #333;    
+  }
+  
+
+  nav ul {
+  margin-left: 12%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  color: var(--fondo_claro); 
+  
+}
+nav ul li{
+    margin-left: 2%;
+}
+
+#container{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap; 
+    
+}
+#container .card{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.grafico {
+    height: 200px;
+    margin: 1rem auto;
+    position: relative;
+    width: 200px;
+      } 
+.recorte {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+     }
+.quesito {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+     }
+.sombra {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+    border: 5px solid #000;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+     }
+
+#porcion1 {
+    transform: rotate(0deg);
+     }
+
+#porcion1 .quesito {
+    background-color: rgba(0,0,255,.7);
+    transform: rotate(70deg);
+     }
+#porcion2 {
+    transform: rotate(70deg);
+     }
+#porcion2 .quesito {
+    background-color: rgba(255,255,0,.7);
+    transform: rotate(120deg);
+     }
+#porcion3 {
+    transform: rotate(-170deg);
+     }
+#porcion3 .quesito {
+    background-color: rgba(0,128,0,.7);
+    transform: rotate(25deg);
+     }
+#porcionFin {
+    transform:rotate(-145deg);
+     }
+#porcionFin .quesito {
+    background-color: rgba(255,0,0,.7);
+    transform: rotate(145deg);
+     }
+#porcion1 .quesito:after {
+    content: attr(data-rel);
+    left: 25%;
+    line-height: 5;
+    position: absolute;
+    top: 0;
+    transform: rotate(-70deg);
+}
+#porcion2 .quesito:after {
+    content: attr(data-rel);
+    left: 15%;
+    position: absolute;
+    top: 30%;
+    transform: rotate(-190deg);
+}
+#porcion3 .quesito:after {
+    content: attr(data-rel);
+    left: 35%;
+    position: absolute;
+    top: 4%;
+    transform: rotate(70deg);
+}
+#porcionFin .quesito:after {
+   content: attr(data-rel);
+   left: 10%;
+   position: absolute;
+   top: 30%;
+}
+
+.qrcode-text {
+    padding-right: 1.7em;
+    margin-right: 0;
+    vertical-align: middle;
+  }
+   
+  .qrcode-text + .qrcode-text-btn {
+    width: 1.7em;
+    margin-left: -1.7em;
+    vertical-align: middle;
+  }

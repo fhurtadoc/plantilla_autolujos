@@ -1,0 +1,81 @@
+
+@font-face{
+   font-family: "RobotoCondensedLight";
+   src: url("../fonts/robotocondensed-light.ttf"), 
+   url("../fonts/robotocondensed-light.eot"), 
+   url("../fonts/robotocondensed-light.woff"), 
+   url("../fonts/robotocondensed-light.woff2"), 
+   url("../fonts/robotocondensed-light.svg");
+}
+@font-face{
+   font-family: "RobotoRegular";
+   src: url("../fonts/roboto-regular.ttf"), 
+   url("../fonts/roboto-regular.eot"), 
+   url("../fonts/roboto-regular.woff"), 
+   url("../fonts/roboto-regular.woff2"), 
+   url("../fonts/roboto-regular.svg");
+}
+@font-face{
+   font-family: "OswaldLight";
+   src: url("../fonts/oswald-light.ttf"), 
+   url("../fonts/oswald-light.eot"), 
+   url("../fonts/oswald-light.woff"), 
+   url("../fonts/oswald-light.woff2"), 
+   url("../fonts/oswald-light.svg");
+}
+
+*{
+   font-family: "OswaldLight" ;
+}
+
+:root {
+   --fondo_oscuro: #3c5378;
+   --fondo_claro: #e6e6e6;
+   --letra_claro: #b8b4b4;
+   --fondo_oscuro: #333333;
+ }
+
+
+body{
+  background-image: url("../assets/img/fondoPrincipal.jpg") ;    
+  background-size: cover;
+}
+
+#card p{
+   color: var(--fondo_oscuro); 
+}
+
+#card h1{
+   color: var(--fondo_oscuro); 
+}
+
+.login-page {
+    padding: 18% 0 0;
+    margin: 0 auto 100px;
+    max-width: 400px;
+    position: relative;
+  }
+   
+  .login-form {
+     box-shadow: 0 0 27px 0 rgba(84, 84, 84, 0.62);
+     background-color: #cccc;
+  }
+   
+  .login-form-header {
+     padding-top: 16px;
+  }
+   
+  .login-from-row {
+     padding-top: 16px;
+     padding-bottom: 16px;
+  }
+   
+  .login-form-font-header {
+     font-size:30px; 
+     font-weight: bold;
+  }
+   
+  .login-form-font-header span {
+     color: #007C9B;
+  }
+

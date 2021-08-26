@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/sweetalert2.css">
+	<link rel="stylesheet" href="css/material.min.css">
+	<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/main.css">	
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>	
+	<script src="./js/sweetalert2.min.js" ></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js" ></script>
+	<script src="./js/main.js" ></script> 
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>   
+    <title>Adminitracion</title>
+</head>
+<body>
+    <section>
+        <div class="row">
+            <div class="col-2" style=" background-color: rgba(65, 65, 64, 0.38);" >
+                <div class="row">
+                    <div id="titulo">                        
+                        <h4 style="font-family: 'OswaldLight';">Autolujos Universo</h4>
+                    </div>  
+                </div>
+                
+                <div class="col">
+                                      
+                    <div id="imagen">
+                        <img src="assets/img/avatar-male.png" alt="Avatar" class="img-responsive">
+                        <p>Nombre de Usuario</p>
+                    </div>                    
+                </div>
+                <div id="menu"> 
+                    <div id="menu_container">
+                        <div class="col" >
+                            <div class="boton" onclick="carge(1)">
+                                <img src="assets/img/home.png" alt="home">
+                                <a href="administrador.html">Home</a>
+                            </div>                            
+                            
+                        </div>
+                        <div class="col">
+                            <div class="boton" onclick="carge(2)">
+                                <img src="assets/img/productos.png" alt="productos">
+                                <a href="administrador.html">Productos</a>
+                            </div>
+                            
+                        </div>
+                        <div class="col">
+                            <div class="boton" onclick="carge(3)">
+                                <img src="assets/img/inventario.png" alt="Inventario">
+                                <a href="administrador.html">Inventario</a>
+                            </div>                            
+                        </div>
+                        <div class="col" onclick="carge(4)">
+                            <div class="boton">
+                            <i class="zmdi zmdi-shopping-cart" style="color: white;"></i>                                
+                            <a href="administrador.html">Registro Venta</a>
+                            </div>
+                        </div>
+                        <div class="col" onclick="carge(5)">
+                            <div class="boton">                                
+                                <i class="zmdi zmdi-truck" style="color: white;"></i>                                
+                            <a href="administrador.html">Provedores</a>
+                            </div>
+                        </div> 
+                        <div class="col" onclick="carge(6)">
+                            <div class="boton">                                
+                                <i class="zmdi zmdi-accounts" style="color: white;"></i>                                
+                            <a href="administrador.html">Clientes</a>
+                            </div>
+                        </div>                                                                                       
+                        <div class="col" >
+                            <div class="boton">                                                                
+                                <img src="assets/img/ventas.png" alt="Registro">
+                            <a href="InformeVentas.html">Infome de Ventas</a>
+                            </div>
+                        </div>                                                                                       
+                        
+                    </div>                                           
+                </div>
+                
+            </div>
+            <div class="col-10" style="background-color: rgba(255, 255, 255, 0.97);" >  
+                <div class="row">
+                    <nav id="nav">                        
+                        <ul style="margin-left: 70%;">
+                            <li><img src="./assets/img/campana.png" alt="campana" style="width: 30px;"></li>
+                            <li><a href="./principal.html"><img src="./assets/img/salir.png" alt="salida" style="width: 20px;"></a></li>
+                            <li>User Name</li> 
+                            <li><img src="assets/img/avatar-male.png" alt="Avatar" style="width: 30px;"></li>                           
+                        </ul>                        
+                    </nav>  
+                </div>
+               
+<section class="full-width header-well">
+    <div class="full-width header-well-icon">
+        <i class="zmdi zmdi-shopping-cart"></i>
+    </div>
+    <div class="full-width header-well-text">
+        <p class="text-condensedLight">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aut nulla accusantium minus corporis accusamus fuga harum natus molestias necessitatibus.
+        </p>
+    </div>
+    </section>
+    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+                
+        </div>
+    </section>
+    <script src="js/info_ventas.js"></script>
+</body>
+</html>
